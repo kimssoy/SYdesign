@@ -125,6 +125,58 @@ section#contents h3{
 }
 /*======================*/
 
+section#portfolio{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 0 60px 0;
+    height:auto;
+    border:1px solid #ccc;
+}
+section#portfolio>.wrap2{
+    display:flex;
+    flex-wrap:wrap;
+}
+section#portfolio .box2{
+    width:100%;
+    margin:auto;
+    padding:20px 40px;
+}
+.box2>.text{
+    text-align:center;
+}
+.box2>.text>h2{
+    font-size:20px;
+    font-weight:500;
+}
+.box2>.text>h3{
+    font-size:18px;
+    font-weight:normal;
+}
+.box2 img{
+    display:block;
+    width:80%;
+    height:auto;
+    margin:auto;
+}
+.box2>.btn{
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+}
+.box2>.btn>a{
+    padding:10px 20px;
+    border:1px solid #333;
+    border-radius:5px;
+    margin:30px 10px;
+    font-size:14px;
+}
+.box2>.btn>a:hover{
+    background-color:#f1f1f1;
+    transition:all 0.3s;
+}
+/*====================*/
+
 
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
@@ -182,6 +234,25 @@ section#contents h3{
         font-size:18px;
         padding-left:20px;
     }
+
+    section#portfolio{
+        max-width:500px;
+        padding:40px 0 40px 0;
+    }
+    
+    .box2 img{width:100%;}
+    .box2>.text>h2{
+        font-size:18px;
+    }
+    .box2>.text>h3{
+        font-size:16px;
+    }
+    .box2>.btn{width:100%;}
+    .box2>.btn>a{
+        padding:8px 15px;
+        font-size:12px;
+        margin:20px 5px;
+    }
 }
 
 /*브라우저 넓이가 480px 이하 일 때*/
@@ -205,5 +276,17 @@ section#contents h3{
     section#contents h3{
         font-size:16px;
         padding-left:0;
+    }
+
+    .box2>.text>h2{
+        font-size:16px;
+    }
+    .box2>.text>h3{
+        font-size:14px;
+    }
+    .box2>.btn>a{
+        padding:8px 10px;
+        font-size:11px;
+        margin:20px 5px;
     }
 }
