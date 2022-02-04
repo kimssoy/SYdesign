@@ -42,7 +42,7 @@ section#main{
     background-size:cover;
     background-position:left center;
     overflow:hidden;
-    background-image:url(/images/bg.jpg);
+    background-image:url(../images/bg.jpg);
 }
 
 section#main>img{position:absolute;}
