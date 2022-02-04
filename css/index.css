@@ -1,0 +1,205 @@
+#menu{
+    width:100%;
+    height:80px;
+    background-color:#f1f1f1;
+    position:fixed;
+    top:0; left:50%;
+    transform:translate(-50%);
+    z-index:99999;
+    box-shadow:0 5px 3px rgba(0,0,0,0.2);
+}
+#menu>.wrap{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo>h1{
+    margin:0 20px;
+    font-size:24px;
+    font-weight:500;
+    line-height:80px;
+}
+.nav{
+    display:flex;
+}
+.nav>li{
+    margin:0 20px;
+    font-size:14px;
+}
+.nav>li>a{width:100%; display:block;}
+
+.toggle{
+    position:absolute;
+    top:18px; right:20px;
+    font-size:25px;
+    display:none;
+}
+/*==========================*/
+section#main{
+    width:100%;
+    height:100vh;
+    position:relative;
+    background-size:cover;
+    background-position:left center;
+    overflow:hidden;
+    background-image:url(/images/bg.jpg);
+}
+
+section#main>img{position:absolute;}
+
+section#main>article{
+    width:100%;
+    height:100vh;
+}
+.p11{top:0; right:-400px;}
+.p12{top:-100px; left:-100px;}
+
+section#main .title{
+    width:400px;
+    height:180px;
+    border-radius:30px;
+    background-color:rgba(255,255,255,0.8);
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    z-index:9999;
+}
+section#main .title>h2{
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    font-size:18px;
+    font-weight:normal;
+    text-align:center;
+    line-height:2;
+    z-index:9999;
+}
+section#main .title>h2>span{
+    text-decoration:underline;
+    text-underline-offset:6px;
+    text-decoration-thickness:2px;
+    text-decoration-color:#333;
+    text-decoration-style:dashed;
+}
+/*===============*/
+section#contents{
+    max-width:1000px;
+    margin:auto;
+    height:auto;
+    padding-bottom:60px;
+}
+section#contents>img{
+    display:block;
+    width:80%;
+    height:auto;
+    margin:auto;
+}
+section#contents>.wrap{
+    display:flex;
+    flex-wrap:wrap;
+}
+section#contents .box{
+    width:50%;
+    margin:auto;
+    padding:20px 40px;
+}
+section#contents .box:nth-child(2)>.txt dl,
+section#contents .box:nth-child(4)>.txt dl{padding-left:0;}
+section#contents .box:nth-child(2)>.txt h3,
+section#contents .box:nth-child(4)>.txt h3{padding-left:0;}
+
+section#contents dl{display:table; padding-left:80px;}
+section#contents dt{
+    display:table-cell;
+    font-size:14px;
+    padding-right:10px;
+    color:#999;
+}
+section#contents h3{
+    font-size:20px;
+    padding-left:80px;
+    padding-bottom:10px;
+}
+/*======================*/
+
+
+/*브라우저의 넓이가 768px 이하 일 때*/
+@media screen and (max-width:768px){
+    .p12{display:none;}
+    #menu>.wrap{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .nav{
+        width:100%;
+        flex-direction:column;
+        max-height:0;
+        overflow:hidden;
+        transition:all 0.5s ease-in-out;
+        background-color:rgba(0,0,0,0.8);
+    }
+    .nav>li{
+        width:100%;
+        text-align:center;
+        margin:0;
+        color:#fff;
+        line-height:100px;
+    }
+    .nav>li>a:hover{
+        background-color:rgb(224, 208, 191);
+        color:#333;
+        transition:all 0.3s;
+    }
+
+    .toggle{display:block;}
+
+    section#main .title{
+        width:320px;
+        height:140px;
+    }
+    section#main .title>h2{font-size:16px;}
+    section#main .title>h2>span{
+        text-underline-offset:4px;
+    }
+
+    section#contents{
+        max-width:500px;
+        padding-bottom:40px;
+    }
+    section#contents>img{width:100%;}
+    section#contents .box{
+        width:50%;
+        padding:20px 0;
+    }
+    section#contents dl{padding-left:20px;}
+    section#contents dt{font-size:12px;}
+    section#contents dd{font-size:13px;}
+    section#contents h3{
+        font-size:18px;
+        padding-left:20px;
+    }
+}
+
+/*브라우저 넓이가 480px 이하 일 때*/
+@media screen and (max-width:480px){
+    section#main .title{
+        width:250px;
+        height:140px;
+    }
+    section#main .title>h2{font-size:12px;}
+    section#main .title>h2>span{
+        text-underline-offset:2px;
+    }
+    section#contents{padding-bottom:20px;}
+    section#contents .box{
+        width:100%;
+        padding:20px 20px;
+    }
+    section#contents dl{padding-left:0;}
+    section#contents dt{font-size:11px;}
+    section#contents dd{font-size:12px;}
+    section#contents h3{
+        font-size:16px;
+        padding-left:0;
+    }
+}

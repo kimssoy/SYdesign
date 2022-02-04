@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Rampart+One&display=swap');
+
+*{margin:0; padding:0; box-sizing:border-box;}
+a{text-decoration:none; color:inherit;}
+ul{list-style:none;}
+
+body{
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight:normal;
+    letter-spacing:1.5px;
+    line-height:1.6;
+    user-select:none;
+    color:#333;
+}
