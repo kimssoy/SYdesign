@@ -13,8 +13,11 @@
     justify-content:space-around;
     align-items:center;
 }
-.logo>h1{
+.logo{
+    display:flex;
     margin:0 20px;
+}
+.logo>h1{
     font-size:24px;
     font-weight:500;
     line-height:80px;
@@ -26,7 +29,6 @@
     margin:0 20px;
     font-size:14px;
 }
-.nav>li>a{width:100%; display:block;}
 
 .toggle{
     position:absolute;
@@ -152,6 +154,19 @@ section#portfolio .box2{
     font-size:18px;
     font-weight:normal;
 }
+.box2>.text:nth-child(3)>h2{
+    padding-top:30px;
+    font-size:18px;
+}
+.box2>.text:nth-child(3)>p{
+    font-size:15px;
+    padding-bottom:10px;
+}
+.box2>.text:nth-child(3)>h3{font-size:16px;}
+.box2>.text:nth-child(3) span{
+    font-size:15px;
+}
+.box2>.text:nth-child(3)>h3:nth-child(4){display:none;}
 .box2 img{
     display:block;
     width:80%;
@@ -168,7 +183,7 @@ section#portfolio .box2{
     padding:10px 20px;
     border:1px solid #333;
     border-radius:5px;
-    margin:30px 10px;
+    margin:30px 5px;
     font-size:14px;
 }
 .box2>.btn>a:hover{
@@ -205,6 +220,11 @@ section#portfolio .box2{
         color:#333;
         transition:all 0.3s;
     }
+    .logo{
+        display:flex;
+        margin:0;
+        margin:auto;
+    }
 
     .toggle{display:block;}
 
@@ -240,6 +260,19 @@ section#portfolio .box2{
         padding:40px 0 40px 0;
     }
     
+    .box2>.text:nth-child(3)>h2{
+        padding-top:20px;
+        font-size:15px;
+    }
+    .box2>.text:nth-child(3)>p{
+        font-size:14px;
+        padding-bottom:10px;
+    }
+    .box2>.text:nth-child(3)>h3{font-size:14px;}
+    .box2>.text:nth-child(3) span{
+        font-size:13px;
+    }
+
     .box2 img{width:100%;}
     .box2>.text>h2{
         font-size:18px;
@@ -268,7 +301,7 @@ section#portfolio .box2{
     section#contents{padding-bottom:20px;}
     section#contents .box{
         width:100%;
-        padding:20px 20px;
+        padding:20px 25px;
     }
     section#contents dl{padding-left:0;}
     section#contents dt{font-size:11px;}
@@ -279,7 +312,7 @@ section#portfolio .box2{
     }
 
     .box2>.text>h2{
-        font-size:16px;
+        font-size:15px;
     }
     .box2>.text>h3{
         font-size:14px;
@@ -287,6 +320,20 @@ section#portfolio .box2{
     .box2>.btn>a{
         padding:8px 10px;
         font-size:11px;
-        margin:20px 5px;
     }
+
+    .box2>.text:nth-child(3)>h2{
+        padding-top:20px;
+        font-size:14px;
+    }
+    .box2>.text:nth-child(3)>p{
+        font-size:13px;
+        padding-bottom:10px;
+    }
+    .box2>.text:nth-child(3)>h3{font-size:13px;}
+    .box2>.text:nth-child(3) span{
+        font-size:12px;
+    }
+    .box2>.text:nth-child(3)>h3:nth-child(4){display:block;}
+    .box2>.text:nth-child(3)>h3:nth-child(3){display:none;}
 }
