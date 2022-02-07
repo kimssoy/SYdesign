@@ -1,26 +1,25 @@
 #menu{
     width:100%;
-    height:80px;
     background-color:#f1f1f1;
     position:fixed;
     top:0; left:50%;
     transform:translate(-50%);
     z-index:99999;
     box-shadow:0 5px 3px rgba(0,0,0,0.2);
+    padding:10px;
 }
 #menu>.wrap{
+    max-width:1000px;
+    margin:auto;
     display:flex;
     justify-content:space-around;
     align-items:center;
 }
-.logo{
-    display:flex;
-    margin:0 20px;
-}
-.logo>h1{
-    font-size:24px;
-    font-weight:500;
-    line-height:80px;
+.logo img{
+    width:60px;
+    height:60px;
+    display:block;
+    margin-left:20px;
 }
 .nav{
     display:flex;
@@ -28,6 +27,10 @@
 .nav>li{
     margin:0 20px;
     font-size:14px;
+}
+.nav>li>a{
+    width:100%;
+    display:block;
 }
 
 .toggle{
@@ -191,7 +194,24 @@ section#portfolio .box2{
     transition:all 0.3s;
 }
 /*====================*/
+section#contect{
+    max-width:1000px;
+    margin:auto;
+    height:auto;
+    padding:100px 0 100px 0;
+    text-align:center;
+}
+.contectText>h3{
+    font-size:18px;
+    font-weight:500;
+    padding-bottom:30px;
+}
+#contect>p{
+    padding-top:30px;
+    font-size:12px;
+}
 
+/*===================*/
 
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
@@ -206,14 +226,20 @@ section#portfolio .box2{
         max-height:0;
         overflow:hidden;
         transition:all 0.5s ease-in-out;
-        background-color:rgba(0,0,0,0.8);
+        background-color:#f1f1f1;
     }
     .nav>li{
         width:100%;
         text-align:center;
         margin:0;
-        color:#fff;
-        line-height:100px;
+        color:#333;
+        padding:10px 20px;
+    }
+    .nav>li>a{
+        width:100%;
+        display:block;
+        padding:20px;
+        border:2px solid rgb(224, 208, 191);
     }
     .nav>li>a:hover{
         background-color:rgb(224, 208, 191);
@@ -221,9 +247,11 @@ section#portfolio .box2{
         transition:all 0.3s;
     }
     .logo{
-        display:flex;
-        margin:0;
         margin:auto;
+    }
+    .logo img{
+        margin:0;
+
     }
 
     .toggle{display:block;}
