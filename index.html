@@ -23,7 +23,7 @@
 
 <body>
     <div id="menu">
-        <a class="toggle" href="#"><i class="fas fa-bars"></i></a>
+        <button class="toggle" type="button"><i class="fas fa-bars"></i></button>
         <div class="wrap">
             <div class="logo">
                 <a href="#main"><img src="images/logo.png" alt="soyeon"></a>
@@ -181,19 +181,6 @@
     </script>
 
     <script>
-        const toggle = document.querySelector(".toggle");
-        const nav = document.querySelector(".nav");
-        toggle.addEventListener("click",() => {
-            let ht = nav.scrollHeight;
-            let navHt = nav.getBoundingClientRect().height;
-            if(navHt == 0){
-                nav.style.maxHeight = ht+"px";
-            }else{
-                nav.style.maxHeight = 0;
-            }
-        })
-
-
         //마우스 움직임에 반응하는 서브 이미지 설정
         const sections = Array.prototype.slice.call(document.querySelectorAll("section"));
 
