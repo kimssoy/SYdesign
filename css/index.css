@@ -348,6 +348,9 @@ section#contect{
         font-size:12px;
         margin:20px 5px;
     }
+    .contectText>h3{
+        font-size:15px;
+    }
 }
 
 /*브라우저 넓이가 480px 이하 일 때*/
