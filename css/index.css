@@ -137,9 +137,7 @@ section#contents .box{
     margin:auto;
     padding:20px 40px;
 }
-section#contents .box:nth-child(2)>.txt dl:nth-child(4)>dd{
-    padding-left:4px;
-}
+
 section#contents .box:nth-child(2)>.txt dl,
 section#contents .box:nth-child(4)>.txt dl{padding-left:0;}
 section#contents .box:nth-child(2)>.txt h3,
