@@ -13,5 +13,4 @@ $(function(){
       $(".one").css("display","block");
       $(".change").css("display","none");
   });
-
 });
