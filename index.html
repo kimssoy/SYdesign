@@ -22,6 +22,8 @@
 </head>
 
 <body>
+    <button id="top" type="button">TOP</button>
+
     <header>
         <button class="toggle" type="button"><i class="fas fa-bars"></i></button>
         <div class="wrap">
@@ -181,6 +183,24 @@
     </script>
 
     <script>
+        const button = document.querySelector("#top");
+        window.addEventListener("scroll",() => {
+            let scroll = window.pageYOffset; 
+            if(scroll > 100){
+                button.style.display = "block";
+            }else{
+                button.style.display = "none";
+            }
+        })
+
+        button.addEventListener("click",() => {
+            window.scrollTo({
+                behavior : 'smooth',
+                left : 0,
+                top : 0,
+            });
+        })
+        
         //마우스 움직임에 반응하는 서브 이미지 설정
         const sections = Array.prototype.slice.call(document.querySelectorAll("section"));
 
