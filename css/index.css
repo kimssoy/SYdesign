@@ -1,14 +1,11 @@
-#menu{
+header{
     width:100%;
     background-color:#f1f1f1;
     position:fixed;
-    top:0; left:50%;
-    transform:translate(-50%);
     z-index:99999;
     box-shadow:0 5px 3px rgba(0,0,0,0.2);
-    padding:10px;
 }
-#menu>.wrap{
+header>.wrap{
     width:100%;
     line-height:80px;
     margin:auto;
@@ -16,30 +13,29 @@
     justify-content:space-around;
     align-items:center;
 }
-.logo img{
-    width:60px;
-    height:60px;
+.logo{margin:0 20px;}
+.logo>a{
     display:block;
-    margin-left:20px;
+    font-size:24px;
+    line-height:80px;
+    font-family:'Lobster';
 }
 .nav{
     display:flex;
-    line-height:80px;
 }
 .nav>li{
     margin:0 20px;
     font-size:14px;
-    line-height:80px;
 }
 .nav>li>a{
     width:100%;
     display:block;
-    line-height:80px;
+    line-height:60px;
 }
 
 .toggle{
     position:absolute;
-    top:32px; right:20px;
+    top:25px; right:20px;
     font-size:30px;
     outline:0;
     border:0;
@@ -223,7 +219,7 @@ section#contect{
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
     .p12{display:none;}
-    #menu>.wrap{
+    header>.wrap{
         flex-direction:column;
         align-items:flex-start;
     }
@@ -253,13 +249,9 @@ section#contect{
         transition:all 0.3s;
     }
     .logo{
-        margin:auto;
-        height:80px;
-        padding-top:12px;
-    }
-    .logo img{
         margin:0;
-
+        display:flex;
+        align-self:center;
     }
 
     .toggle{display:block;}
