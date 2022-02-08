@@ -358,6 +358,7 @@ section#contect{
         right:30px;
         font-size:14px;
     }
+    .logo>a{font-size:22px;}
 
     section#main .title{
         width:300px;
