@@ -245,7 +245,7 @@ section#portfolio .box2{
 section#contect{
     max-width:1000px;
     margin:auto;
-    background:url("/images/03.jpg") no-repeat center;
+    background:url("../images/03.jpg") no-repeat center;
     background-attachment:fixed;
     min-height:500px;
 }
