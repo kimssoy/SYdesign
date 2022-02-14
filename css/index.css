@@ -353,11 +353,10 @@ section#contect{
     
     .box2>.text:nth-child(3)>h2{
         padding-top:20px;
-        font-size:15px;
+        font-size:16px;
     }
     .box2>.text:nth-child(3)>p{
         font-size:14px;
-        padding-bottom:10px;
     }
     .box2>.text:nth-child(3)>h3{font-size:14px;}
     .box2>.text:nth-child(3) span{
