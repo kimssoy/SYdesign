@@ -120,13 +120,34 @@ section#contents{
     max-width:1000px;
     margin:auto;
     height:auto;
-    padding-bottom:60px;
+    padding:60px 0 60px 0;
 }
-section#contents>img{
+section#contents>.c-img{
+    height:350px;
+    position:relative;
+}
+section#contents img{
     display:block;
-    width:80%;
-    height:auto;
     margin:auto;
+    position:absolute;
+}
+section#contents .memo{
+    top:40%; left:30%;
+    animation:spin 3s cubic-bezier(.71,1.49,1,1.13) infinite;
+}
+section#contents .space_man{
+    top:20%; right:0;
+    animation:move 3s cubic-bezier(.71,1.49,0.3,2.13) infinite;
+}
+@keyframes spin{
+    0%{transform:rotate(15deg);}
+    50%{transform:rotate(-15deg);}
+    100%{transform:rotate(15deg);}
+}
+@keyframes move{
+    0%{transform: translateY(10px);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(10px);}
 }
 section#contents>.wrap{
     display:flex;
@@ -300,9 +321,15 @@ section#contect{
 
     section#contents{
         max-width:500px;
-        padding-bottom:40px;
+        padding:40px 0 40px 0;
     }
-    section#contents>img{width:100%;}
+    section#contents>.c-img{height:300px;}
+    section#contents img{width:60%;}
+    section#contents .memo{
+        width:15%;
+        top:40%; left:20%;
+    }
+    section#contents .space_man{top:25%;}
     section#contents .box{
         width:50%;
         padding:20px 0;
@@ -370,7 +397,9 @@ section#contect{
     section#main .title>h2>span{
         text-underline-offset:3px;
     }
-    section#contents{padding-bottom:20px;}
+    section#contents{padding:20px 0 20px 0;}
+    section#contents>.c-img{height:250px;}
+    section#contents .space_man{top:30%;}
     section#contents .box{
         width:100%;
         padding:20px 25px;
@@ -408,4 +437,12 @@ section#contect{
     }
     .box2>.text:nth-child(3)>h3:nth-child(4){display:block;}
     .box2>.text:nth-child(3)>h3:nth-child(3){display:none;}
+}
+/*브라우저 넓이가 375px 이하 일 때*/
+@media screen and (max-width:375px){
+    section#contents>.c-img{height:200px;}
+}
+/*브라우저 넓이가 300px 이하 일 때*/
+@media screen and (max-width:300px){
+    section#contents>.c-img{height:150px;}
 }
