@@ -245,7 +245,11 @@ section#portfolio .box2{
 section#contect{
     max-width:1000px;
     margin:auto;
-    height:auto;
+    background:url("/images/03.jpg") no-repeat center;
+    background-attachment:fixed;
+    min-height:500px;
+}
+.contectText{
     padding:100px 0 100px 0;
     text-align:center;
 }
@@ -254,7 +258,7 @@ section#contect{
     font-weight:500;
     padding-bottom:30px;
 }
-#contect>p{
+.contectText>p{
     padding-top:30px;
     font-size:12px;
 }
@@ -340,6 +344,10 @@ section#contect{
     section#contents h3{
         font-size:18px;
         padding-left:20px;
+    }
+    section#contect{
+        max-width:500px;
+        background-size:cover;
     }
 
     section#portfolio{
