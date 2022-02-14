@@ -257,6 +257,10 @@ section#contect{
     padding-top:30px;
     font-size:12px;
 }
+.contectText>a:hover{
+    color:#999;
+    transition:all 0.3s;
+}
 
 /*===================*/
 
