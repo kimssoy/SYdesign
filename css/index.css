@@ -500,7 +500,7 @@ footer>p>i{margin-right:5px;}
 
     footer>p:nth-child(1){display:none;}
     footer>p:nth-child(2){display:block;}
-    footer>p{font-size:10px;}
+    footer>p{font-size:11px;}
 }
 /*브라우저 넓이가 375px 이하 일 때*/
 @media screen and (max-width:375px){
@@ -524,4 +524,5 @@ footer>p>i{margin-right:5px;}
     .contectText>p{
         font-size:11px;
     }
+    footer>p{font-size:10px;}
 }
