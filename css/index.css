@@ -109,6 +109,8 @@ header>.wrap{
     border:0;
     cursor:pointer;
     display:none;
+    color:#fff;
+    background-color:transparent;
 }
 /*==========================*/
 section#main{
