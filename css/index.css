@@ -340,10 +340,10 @@ footer>p:nth-child(2){display:none;}
     .nav>li>a{
         width:100%;
         display:block;
-        border:2px solid rgb(224, 208, 191);
+        border:2px solid #fed370;
     }
     .nav>li>a:hover{
-        background-color:rgb(224, 208, 191);
+        background-color:#fed370;
         color:#333;
         transition:all 0.3s;
     }
