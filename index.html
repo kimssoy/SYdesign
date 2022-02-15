@@ -21,6 +21,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
@@ -67,7 +73,6 @@
     </section>
 
     <section id="contents">
-        
         <div class="wrap">
             <ul class="box">
                 <li class="txt">
@@ -133,6 +138,33 @@
             </ul>
         </div>
     </section>
+        <div class="swiperTitle">
+            <h3>Skill</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/photoshop.png" alt="photoshop">
+                        <p>80&percnt;</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/illustrator.png" alt="illustrator">
+                        <p>70&percnt;</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/html.png" alt="html">
+                        <p>80&percnt;</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/css.png" alt="css">
+                        <p>80&percnt;</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/js.png" alt="js">
+                        <p>60&percnt;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <section id="portfolio">
         <div class="wrap2">
@@ -230,6 +262,17 @@
     <script src="wow/wow.js"></script>
     <script>
         new WOW().init();
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
     </script>
 
     <script>
