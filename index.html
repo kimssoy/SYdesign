@@ -24,6 +24,15 @@
 </head>
 
 <body>
+    <!--cursor effect-->
+    <div class="cursor_effect">
+        <div class="cursor_wrap">
+            <div class="cursor_icon">
+                <img src="images/star.png" alt="cursor">
+            </div>
+        </div>
+    </div>
+
     <button id="top" type="button">TOP</button>
 
     <header>
@@ -203,12 +212,48 @@
         <p>이 포트폴리오는 반응형으로 제작되었습니다.</p>
     </div>
 
+    <footer>
+        <p>
+            &copy; 2022. Kim Soyeon. All Rights Reserved.<br><br>
+            이 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
+            사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.
+        </p>
+        <p>
+            &copy; 2022. Kim Soyeon. All Rights Reserved.<br><br>
+            이 페이지는 상업적 목적이 아닌<br>
+            개인 포트폴리오용으로 제작되었습니다.<br>
+            사용된 일부 이미지 및 폰트 등은<br>
+            별도의 출처가 있음을 밝혀 드립니다.
+        </p>
+    </footer>
+
     <script src="wow/wow.js"></script>
     <script>
         new WOW().init();
     </script>
 
     <script>
+        //cursor effect요소가 마우스를 따라 움직이는 효과
+        const cursorEffect = document.querySelector(".cursor_effect");
+
+        document.documentElement.addEventListener("mousemove",(e) => {
+            let posX = e.clientX;
+            let posY = e.clientY;
+
+            cursorEffect.style.transform = `translate(${posX}px,${posY}px)`;
+        });
+
+        const cursorIcon = document.querySelector(".cursor_icon");
+
+        document.documentElement.addEventListener("mousedown",() => {
+            cursorIcon.classList.add("active");
+        });
+
+        document.documentElement.addEventListener("mouseup",() => {
+            cursorIcon.classList.remove("active");
+        });
+
+
         const button = document.querySelector("#top");
         window.addEventListener("scroll",() => {
             let scroll = window.pageYOffset; 
