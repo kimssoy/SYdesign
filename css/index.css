@@ -95,7 +95,6 @@ section#main .title>h2{
     font-weight:normal;
     text-align:center;
     line-height:2;
-    letter-spacing:2.5px;
     color:#fff;
 }
 section#main .title>h2>span{
@@ -117,7 +116,8 @@ section#main .memo{
     animation:spin 3s cubic-bezier(.71,1.49,1,1.13) infinite;
 }
 section#main .space_man{
-    top:30%; right:0;
+    width:380px;
+    top:22%; right:0;
     animation:move 3s cubic-bezier(.71,1.49,0.3,2.13) infinite;
 }
 @keyframes spin{
@@ -258,12 +258,18 @@ section#contect{
 /*===================*/
 /*브라우저의 넓이가 980px 이하 일 때*/
 @media screen and (max-width:980px){
+    section#main .title>h2{
+        font-size:18px;
+    }
+    section#main .title>h2>span{
+        font-size:22px;
+    }
     section#main .memo{
         width:100px;
     }
     section#main .space_man{
-        width:350px;
-        top:30%; right:-5%;
+        width:340px;
+        right:-5%;
     }
 }
 
@@ -326,8 +332,8 @@ section#contect{
         width:80px;
     }
     section#main .space_man{
-        width:300px;
-        right:-8%;
+        width:270px;
+        top:24%; right:-8%;
     }
 
     section#contents{
@@ -406,6 +412,7 @@ section#contect{
     }
     section#main .space_man{
         width:200px;
+        top:26%;
     }
 
     section#contents{padding:40px 0 40px 0;}
