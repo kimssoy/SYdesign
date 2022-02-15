@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">  
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 
     <!--폰트어썸-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -272,20 +272,6 @@
             });
         })
         
-        //마우스 움직임에 반응하는 서브 이미지 설정
-        const sections = Array.prototype.slice.call(document.querySelectorAll("section"));
-
-        //각각의 section에서 마우스무브 이벤트 생성
-        sections.forEach(section => section.addEventListener("mousemove",(e) => {
-            let posX = e.pageX;
-            let posY = e.pageY;
-
-            document.querySelector(".p11").style.transform = 
-            `translate(${posX/30}px,${posY/30}px)`;
-            document.querySelector(".p12").style.transform = 
-            `translate(${-posX/20}px,${-posY/20}px)`;
-        }));
-
         
         //한글자씩 타이핑 되는 효과
         var x = "성장하는 웹디자이너";

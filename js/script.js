@@ -1,16 +1,25 @@
 $(function(){
-  $(".nav>li>a").click(function(){
-    $('.nav').css("display","none");
-  })
-
   $(".toggle").click(function(){
-      $(".nav").slideToggle()
-      $(".change").css("display","block");
-      $(".one").css("display","none");
+    $(".nav").slideToggle()
   });
 
-  $(".change").click(function(){
-      $(".one").css("display","block");
-      $(".change").css("display","none");
-  });
+  $(window).resize(function(){
+    let winW = window.innerWidth;
+    if(winW > 768){
+      $(".nav>li>a").click(function(){
+        $(".nav").css("display","block");
+      });
+      $(".logo>a").click(function(){
+        $(".nav").css("display","block");
+      });
+    }else{
+      $(".nav>li>a").click(function(){
+        $(".nav").css("display","none");
+      });
+      $(".logo>a").click(function(){
+        $(".nav").css("display","none");
+      });
+    }
+});
+$(window).trigger("resize");
 });
