@@ -352,7 +352,6 @@ footer>p>i{margin-right:5px;}
         flex-direction:column;
         align-items:flex-start;
         background-color:#000;
-        display:none;
         padding:20px;
     }
     .nav>li{
