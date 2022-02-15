@@ -267,11 +267,6 @@ section#contect{
     font-weight:500;
     padding-bottom:30px;
 }
-.contectText>a{
-    display:block;
-    font-weight:normal;
-}
-.contectText>a:nth-child(2){margin-bottom:5px;}
 .contectText>p{
     padding-top:30px;
     font-size:14px;
