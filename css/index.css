@@ -409,6 +409,7 @@ footer>p>i{margin-right:5px;}
 
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
+    .f_btn{bottom:40px; right:40px;}
     header{padding-top:15px;}
     header>.wrap{
         flex-direction:column;
