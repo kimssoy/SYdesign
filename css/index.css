@@ -63,10 +63,10 @@
 
 .f_btn input{display:none;}
 .f_btn label{
+    display:none;
     width:70px;
     height:35px;
     background-color:rgb(77, 77, 77);
-    display:block;
     border-radius:30px;
     position:relative;
     transition:all 0.5s;
@@ -74,7 +74,6 @@
     cursor:pointer;
 }
 .f_btn label>span{
-    display:block;
     width:25px;
     height:25px;
     background-color:#fff;
