@@ -545,22 +545,22 @@ footer>p>i{margin-right:5px;}
 @media screen and (max-width:480px){
     .f_btn{bottom:30px; right:30px;}
     #top{
-        font-size:14px;
-        top:-30px;
-        left:13px;
+        font-size:15px;
+        top:-34px;
+        left:14px;
     }
     
     .f_btn input{display:none;}
     .f_btn label{
-        width:55px;
-        height:30px;
+        width:60px;
+        height:32px;
     }
     .f_btn label>span{
-        width:20px;
-        height:20px;
+        width:22px;
+        height:22px;
     }
     .f_btn input:checked+label>span{
-        left:calc(100% - 25px);
+        left:calc(100% - 27px);
     }
 
     .logo>a{font-size:22px;}
