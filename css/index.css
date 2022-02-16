@@ -64,8 +64,8 @@
 .f_btn input{display:none;}
 .f_btn label{
     display:none;
-    width:70px;
-    height:35px;
+    width:65px;
+    height:34px;
     background-color:rgb(77, 77, 77);
     border-radius:30px;
     position:relative;
@@ -74,8 +74,8 @@
     cursor:pointer;
 }
 .f_btn label>span{
-    width:25px;
-    height:25px;
+    width:23px;
+    height:23px;
     background-color:#fff;
     border-radius:50%;
     position:absolute;
@@ -88,7 +88,7 @@
     background:#fed370;
 }
 .f_btn input:checked+label>span{
-    left:calc(100% - 30px);
+    left:calc(100% - 29px);
 }
 
 header{
@@ -156,6 +156,7 @@ section#main{
     height:100vh;
     position:relative;
     overflow:hidden;
+    box-shadow:0 5px 3px rgba(0,0,0,0.2);
 }
 
 section#main>img{position:absolute;}
@@ -359,6 +360,7 @@ section#contect{
     background:url("../images/03.jpg") no-repeat center;
     background-attachment:fixed;
     min-height:500px;
+    box-shadow:0px 5px 3px rgba(0,0,0,0.2);
 }
 .contectText{
     padding:100px 0 100px 0;
