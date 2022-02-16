@@ -1,3 +1,19 @@
+:root{
+    --color1:#fed370;
+    --color2:#666;
+    --color3:#333;
+    --color4:rgba(255,255,255,0.6);
+    --color5:#f1f1f1;
+}
+/*darkmode*/
+:root.dark{
+    --color1:rgb(77, 77, 77);
+    --color2:#ccc;
+    --color3:#f1f1f1;
+    --color4:rgba(0,0,0,0.3);
+    --color5:#333;
+}
+
 .cursor_effect{
     position:fixed;
     pointer-events:none;
@@ -24,30 +40,56 @@
     transform:translate(-55%,-25%) scale(0.6);
 }
 
-#top{
-    display:none;
-    width:60px;
-    height:60px;
+.f_btn{
     position:fixed;
     bottom:50px;
     right:50px;
-    z-index:999;
+    z-index:999999;
+}
+#top{
+    display:none;
     border:none;
     outline:none;
-    font-size:16px;
-    background-color:#fff;
-    color:#333;
+    font-size:18px;
+    background-color:transparent;
+    color:var(--color3);
     cursor:pointer;
-    border-radius:50%;
-    border:2px solid #999;
+    position:absolute;
+    top:-40px;
+    left:16px;
+    text-decoration:underline;
+    text-underline-offset:3px;
 }
-#top:hover{
-    background-color:#f1f1f1;
+
+.f_btn input{display:none;}
+.f_btn label{
+    width:70px;
+    height:35px;
+    background-color:rgb(77, 77, 77);
+    display:block;
+    border-radius:30px;
+    position:relative;
     transition:all 0.5s;
+    box-shadow:inset 3px 3px 2px rgba(0,0,0,0.2);
+    cursor:pointer;
 }
-#top:hover>i{
-    color:#555;
-    transition:all 1s;
+.f_btn label>span{
+    display:block;
+    width:25px;
+    height:25px;
+    background-color:#fff;
+    border-radius:50%;
+    position:absolute;
+    top:50%; left:5px;
+    transform:translateY(-50%);
+    transition:all 0.5s;
+    box-shadow:2px 2px 2px rgba(0,0,0,0.2);
+}
+.f_btn input:checked+label{
+    background:#fed370;
+}
+.f_btn input:checked+label>span{
+    left:calc(100% - 30px);
 }
 
 header{
@@ -70,6 +112,7 @@ header>.wrap{
     width:60px;
     height:60px;
     background-color:#fed370;
+    color:#333;
     border-radius:50%;
     margin:0 20px;
     line-height:60px;
@@ -79,10 +122,6 @@ header>.wrap{
     display:block;
     font-size:24px;
     font-family:'Lobster';
-}
-.logo>a:hover{
-    color:#fff;
-    transition:all 0.3s;
 }
 .nav{
     display:flex;
@@ -195,7 +234,6 @@ section#contents dt{
     display:table-cell;
     font-size:14px;
     padding-right:10px;
-    color:#999;
 }
 section#contents dd{font-size:15px;}
 section#contents h3{
@@ -225,6 +263,7 @@ section#contents h3{
 .swiper-slide>img{
     display:block;
     position:relative;
+    width:160px; height:160px;
 }
 .swiper-slide>p{
     position:absolute;
@@ -255,7 +294,8 @@ section#portfolio{
     margin:auto;
     padding:60px 0 60px 0;
     height:auto;
-    border:1px solid #ccc;
+    border:1px solid var(--color2);
+    border-bottom:0;
 }
 section#portfolio>.wrap2{
     display:flex;
@@ -304,13 +344,13 @@ section#portfolio .box2{
 }
 .box2>.btn>a{
     padding:10px 15px;
-    border:1px solid #333;
+    border:1px solid var(--color2);
     border-radius:5px;
     margin:30px 5px;
     font-size:13px;
 }
 .box2>.btn>a:hover{
-    background-color:#f1f1f1;
+    background-color:var(--color4);
     transition:all 0.3s;
 }
 /*====================*/
@@ -334,9 +374,10 @@ section#contect{
     padding-top:30px;
     font-size:14px;
 }
-.contectText>a:hover{
-    color:#999;
-    transition:all 0.3s;
+.contectText>a:nth-child(2)>i{margin-bottom:8px;}
+.contectText>a:hover>i{
+    text-decoration:underline;
+    text-underline-offset:4px;
 }
 /*===================*/
 footer{
@@ -369,14 +410,6 @@ footer>p>i{margin-right:5px;}
 
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
-    #top{
-        width:50px;
-        height:50px;
-        bottom:40px;
-        right:40px;
-        font-size:15px;
-    }
-
     header{padding-top:15px;}
     header>.wrap{
         flex-direction:column;
@@ -456,8 +489,7 @@ footer>p>i{margin-right:5px;}
         height:260px;
     }
     .swiper-slide>img{
-        width:160px; height:160px;
-        
+        width:140px; height:140px;
     }
     .swiper-slide>p{
         font-size:16px;
@@ -511,13 +543,26 @@ footer>p>i{margin-right:5px;}
 
 /*브라우저 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
+    .f_btn{bottom:30px; right:30px;}
     #top{
-        width:45px;
-        height:45px;
-        bottom:30px;
-        right:30px;
         font-size:14px;
+        top:-30px;
+        left:13px;
     }
+    
+    .f_btn input{display:none;}
+    .f_btn label{
+        width:55px;
+        height:30px;
+    }
+    .f_btn label>span{
+        width:20px;
+        height:20px;
+    }
+    .f_btn input:checked+label>span{
+        left:calc(100% - 25px);
+    }
+
     .logo>a{font-size:22px;}
 
     section#main .title>h2>span{
@@ -551,7 +596,7 @@ footer>p>i{margin-right:5px;}
         height:230px;
     }
     .swiper-slide>img{
-        width:130px; height:130px;
+        width:110px; height:110px;
     }
     .swiper-slide>p{
         font-size:14px;
