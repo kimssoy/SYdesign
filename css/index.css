@@ -573,14 +573,10 @@ footer>p>i{margin-right:5px;}
         padding:20px 25px;
     }
     section#contents dl{padding-left:0;}
-    section#contents dt{font-size:11px;}
-    section#contents dd{font-size:12px;}
     section#contents h3{
-        font-size:16px;
         padding-left:0;
     }
 
-    .swiperTitle>h3{font-size:16px;}
     .swiper{
         width:150px;
         height:230px;
@@ -654,5 +650,9 @@ footer>p>i{margin-right:5px;}
     .contectText>p{
         font-size:11px;
     }
+    section#contents dt{font-size:11px;}
+    section#contents dd{font-size:12px;}
+    section#contents h3{font-size:16px;}
+    .swiperTitle>h3{font-size:16px;}
     footer>p{font-size:10px;}
 }
