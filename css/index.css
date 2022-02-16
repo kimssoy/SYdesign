@@ -51,6 +51,8 @@
     border:none;
     outline:none;
     font-size:18px;
+    font-family:'Gowun Dodum';
+    font-weight:bold;
     background-color:transparent;
     color:var(--color3);
     cursor:pointer;
@@ -122,6 +124,7 @@ header>.wrap{
     display:block;
     font-size:24px;
     font-family:'Lobster';
+    font-weight:normal;
 }
 .nav{
     display:flex;
@@ -311,11 +314,9 @@ section#portfolio .box2{
 }
 .box2>.text>h2{
     font-size:20px;
-    font-weight:500;
 }
 .box2>.text>h3{
     font-size:18px;
-    font-weight:normal;
 }
 .box2>.text:nth-child(3)>h2{
     padding-top:30px;
@@ -368,7 +369,6 @@ section#contect{
 }
 .contectText>h3{
     font-size:18px;
-    font-weight:500;
     padding-bottom:30px;
 }
 .contectText>p{
@@ -376,7 +376,7 @@ section#contect{
     font-size:14px;
 }
 .contectText>a:nth-child(2)>i{margin-bottom:8px;}
-.contectText>a:hover>i{
+.contectText>a:hover{
     text-decoration:underline;
     text-underline-offset:4px;
 }
