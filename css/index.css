@@ -577,10 +577,6 @@ footer>p>i{margin-right:5px;}
         top:26%;
     }
 
-    
-    section#contents>h2{
-        font-size:16px;
-    }
     section#contents>h2:nth-child(1){display:none;}
     section#contents>h2:nth-child(2){display:block;}
     section#contents .box{
@@ -655,6 +651,9 @@ footer>p>i{margin-right:5px;}
     section#main .space_man{
         width:180px;
         right:-10%;
+    }
+    section#contents>h2{
+        font-size:18px;
     }
     .contectText>h3{
         font-size:13px;
