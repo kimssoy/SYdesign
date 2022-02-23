@@ -326,7 +326,7 @@ section#portfolio .box2:nth-child(3){padding:10px 40px 40px 40px;}
     text-align:center;
 }
 .box2 .image{
-    width:50%;
+    width:60%;
     margin:auto;
     padding:20px 0 25px 0;
     position:relative;
@@ -555,7 +555,7 @@ footer>p>i{margin-right:5px;}
         padding:60px 0 40px 0;
     }
     .box2 .image{
-        width:60%;
+        width:70%;
         padding:15px 0 10px 0;
     }
     
@@ -637,7 +637,7 @@ footer>p>i{margin-right:5px;}
     }
 
     .box2 .image{
-        width:70%;
+        width:80%;
     }
     .box2>.text>h2{
         font-size:15px;
