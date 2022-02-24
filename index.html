@@ -34,7 +34,8 @@
     <div class="cursor_effect">
         <div class="cursor_wrap">
             <div class="cursor_icon">
-                <img src="images/star.png" alt="cursor">
+                <img src="images/star.png" alt="cursor" class="star">
+                <img src="images/star-d.png" alt="cursor" class="star-d">
             </div>
         </div>
     </div>
@@ -366,8 +367,10 @@
             $('.btn_dark').on('click', function(){
                 if( $(this).is(':checked') == true ) {
                     $('html').addClass('dark');
+                    $(".star-d").css("display","block");
                 }else{
                     $('html').removeClass('dark');
+                    $(".star-d").css("display","none");
                 }
             });
         });
