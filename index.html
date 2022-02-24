@@ -368,9 +368,11 @@
                 if( $(this).is(':checked') == true ) {
                     $('html').addClass('dark');
                     $(".star-d").css("display","block");
+                    $(".star").css("display","none");
                 }else{
                     $('html').removeClass('dark');
                     $(".star-d").css("display","none");
+                    $(".star").css("display","block");
                 }
             });
         });
