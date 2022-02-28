@@ -180,14 +180,58 @@
         </div>
 
     <section id="portfolio">
+        <div id="wrap1">
+            <ul class="box2 wow fadeInLeft" data-wow-offset="300">
+                <li class="text">
+                    <h2>Illustration</h2>
+                    <h3>
+                        - SNS 이벤트 배너<br>
+                        <span>계절에 따른 이벤트 배너 디자인</span>
+                    </h3>
+                </li>
+            </ul>
+            <!--tabmenu-->
+            <ul id="tab">
+                <li>
+                    <a href="#spring" class="on">
+                        <img src="images/tab01.png" alt="spring">
+                    </a>
+                </li>
+                <li>
+                    <a href="#summer">
+                        <img src="images/tab02.png" alt="summer">
+                    </a>
+                </li>
+                <li>
+                    <a href="#autumn">
+                        <img src="images/tab03.png" alt="autumn">
+                    </a>
+                </li>
+                <li>
+                    <a href="#winter">
+                        <img src="images/tab04.png" alt="winter">
+                    </a>
+                </li>
+            </ul>
+            <!--tab content-->
+            <div id="content">
+                <div style="display:block">
+                    <a href="images/spring_event.jpg" target="_blank"><img src="images/spring_event.jpg" alt="spring"></a>
+                </div>
+                <div><a href="images/summer_event.jpg" target="_blank"><img src="images/summer_event.jpg" alt="summer"></a></div>
+                <div><a href="images/comingsoon.jpg" target="_blank"><img src="images/comingsoon.jpg" alt="img3"></a></div>
+                <div><a href="images/comingsoon.jpg" target="_blank"><img src="images/comingsoon.jpg" alt="img4"></a></div>
+            </div>
+        </div>
+
         <div class="wrap2">
             <ul class="box2 wow fadeInLeft" data-wow-offset="300">
                 <li class="text">
                     <h2>Photoshop</h2>
                     <h3>
                         - 피부보정<br>
-                        Mouseover &amp; Click<br>
-                        &dtrif;
+                        <span>Mouseover &amp; Click<br>
+                        &dtrif;</span>
                     </h3>
                 </li>
                 <li class="image">
@@ -448,6 +492,22 @@
         }
 
         typeWriter();
+
+        $(function(){
+            const tab = $("#tab>li");
+            const content = $("#content>div");
+
+            tab.on("click",function(e){
+                e.preventDefault();
+
+                tab.find("a").removeClass("on");
+                $(this).find("a").addClass("on");
+                let i = $(this).index();
+
+                content.css("display","none");
+                content.eq(i).css("display","block");
+            })
+        });
     </script>
 </body>
 
