@@ -705,10 +705,9 @@ footer>p>i{margin-right:5px;}
         height:380px;
     }
     #tab>li{
-        height:18px;
+        height:19px;
     }
     #tab>li>a>img{width:65px;}
-    #tab>li>a.on>img{margin-top:-14px;}
 
     .box2 .image{
         width:80%;
