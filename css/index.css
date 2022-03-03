@@ -332,7 +332,7 @@ section#portfolio{
 }
 #tab>li{
     overflow:hidden;
-    height:19px;
+    height:21px;
     margin:0 6px;
 }
 #tab>li:first-child{margin-left:10px;}
