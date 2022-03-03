@@ -5,6 +5,7 @@
     --color4:rgba(255,255,255,0.6);
     --color5:#f1f1f1;
     --color6:rgba(0,0,0,0.5);
+    --color7:rgb(77, 77, 77);
 }
 /*darkmode*/
 :root.dark{
@@ -14,6 +15,7 @@
     --color4:rgba(0,0,0,0.3);
     --color5:#333;
     --color6:rgba(255,255,255,0.5);
+    --color7:#666;
 }
 /*========================*/
 .cursor_effect{
@@ -323,20 +325,28 @@ section#portfolio{
     clear:both;
 }
 #tab{
+    width:100%;
     display:flex;
     justify-content:center;
-    margin:auto;
+    flex-wrap:wrap;
 }
 #tab>li{
-    float:left;
     overflow:hidden;
-    height:23px;
+    height:19px;
     margin:0 6px;
 }
 #tab>li:first-child{margin-left:10px;}
 #tab>li:last-child{margin-right:10px;}
-#tab>li>a>img{margin-top:0;}
-#tab>li>a.on>img{margin-top:-21px;}
+#tab>li>a{display:block;}
+#tab>li>a>img{
+    margin-top:0; 
+    display:flex;
+    flex-wrap:wrap;
+}
+#tab>li>a.on>img{
+    margin-top:-21px;
+    border-bottom:2px solid var(--color7);
+}
 #content{
     position:relative;
     width:100%;
@@ -604,13 +614,13 @@ footer>p>i{margin-right:5px;}
         max-width:500px;
         padding:60px 0 40px 0;
     }
+    #wrap1{height:500px;}
+    #content>div{
+        width:60%;
+    }
     .box2 .image{
         width:70%;
         padding:15px 0 10px 0;
-    }
-
-    #wrap1{
-        height:450px;
     }
     
     .box2>.text:nth-child(3)>h2{
@@ -701,13 +711,20 @@ footer>p>i{margin-right:5px;}
         font-size:14px;
     }
 
-    #wrap1{
-        height:390px;
+    #wrap1{height:530px;}
+    #content>div{
+        width:70%;
+    }
+    #tab{
+        width:50%;
+        margin:auto;
     }
     #tab>li{
-        height:19px;
+        margin:0;
+        margin-bottom:6px;
     }
-    #tab>li>a>img{width:65px;}
+    #tab>li:first-child{margin-left:0; margin-right:6px;}
+    #tab>li:last-child{margin-right:0; margin-left:6px;}
 
     .box2 .image{
         width:80%;
@@ -753,6 +770,10 @@ footer>p>i{margin-right:5px;}
     footer>p:nth-child(2){display:block;}
     footer>p{font-size:11px;}
 }
+/*브라우저 넓이가 420px 이하 일 때*/
+@media screen and (max-width:420px){
+    #wrap1{height:500px;}
+}
 /*브라우저 넓이가 375px 이하 일 때*/
 @media screen and (max-width:375px){
     section#main .title>h2{font-size:14px;}
@@ -763,8 +784,9 @@ footer>p>i{margin-right:5px;}
         background:url("../images/c3.jpg") no-repeat center;
         background-attachment:fixed;
     }
-    #wrap1{
-        height:340px;
+    #wrap1{height:450px;}
+    #tab{
+        width:60%;
     }
 }
 /*브라우저 넓이가 348px 이하 일 때*/
@@ -773,14 +795,7 @@ footer>p>i{margin-right:5px;}
         width:180px;
         right:-10%;
     }
-    #wrap1{
-        height:320px;
-    }
-    #tab>li{
-        margin:0 2px;
-    }
-    #tab>li:first-child{margin-left:8px;}
-    #tab>li:last-child{margin-right:8px;}
+
     section#contents>h2{
         font-size:14px;
     }
@@ -797,5 +812,16 @@ footer>p>i{margin-right:5px;}
     section#contents dd{font-size:12px;}
     section#contents h3{font-size:16px;}
     .swiperTitle>h3{font-size:16px;}
+
+    #wrap1{height:420px;}
     footer>p{font-size:10px;}
+}
+
+/*브라우저 넓이가 279px 이하 일 때*/
+@media screen and (max-width:279px){
+    #tab{
+        width:50%;
+    }
+    #tab>li:first-child{margin-right:0;}
+    #tab>li:last-child{margin-left:0;}
 }
