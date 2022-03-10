@@ -481,6 +481,7 @@ section#contect{
 .contectText{
     padding:100px 0 100px 0;
     text-align:center;
+    color:var(--color3);
 }
 .contectText>h3{
     font-size:18px;
