@@ -143,6 +143,7 @@ header>.wrap{
     float:left;
     margin:0 20px;
     font-size:14px;
+    color:var(--color3);
 }
 .nav>li>a:hover{
     color:#fed370;
@@ -569,7 +570,6 @@ footer>p>i{margin-right:5px;}
     }
     .nav>li>a:hover{
         background-color:#fed370;
-        color:#333;
         transition:all 0.3s;
     }
 
